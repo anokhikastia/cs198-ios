@@ -9,11 +9,68 @@
  
  ### Part 1: Implementing Protocols and Extensions
  */
+protocol Payable {
+    func wages() -> Double
+}
+extension Payable {
+    func wages() -> Double {
+        return 50000.00;
+    }
+}
 
+protocol TimeOff {
+    var vacationDays: Int { get set }
+    func requestForVaction(_ days: Int) -> Bool
+}
+extension TimeOff {
+    func requestForVaction(_ days: Int) -> Bool {
+        if (vacationDays > 7) {
+            return true;
+        }
+        return false;
+    }
+}
 
+enum Task {
+    case spreadsheet
+    case emails
+    case coffee
+}
+protocol Work {
+    func doWork(_ task: Task) -> String
+}
+extension Work {
+    func doWork(_ task: Task) -> String {
+        switch task {
+        case .spreadsheet:
+            return "Balancing the company budget"
+        case .emails:
+            return "Checking emails"
+        case .coffee:
+            return "Getting coffee"
+        }
+    }
+}
 // YOUR CODE HERE
+struct Manager {
+    var name: String
+    var vacationDays: Int = 30
+    func wages() -> Double {
+        return 10000.00;
+    }
+}
+extension Manager : Employee {
+}
 
+struct Worker {
+    var name: String
+    var vacationDays: Int = 15
+}
+extension Worker: Employee, TimeOff, Work { }
 
+protocol Employee: Payable, TimeOff {
+    
+}
 /*:
  ### Part 2: Putting It All Together
  */
