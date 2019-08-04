@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2EEE494522F5096500249BCE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE494422F5096500249BCE /* ImagePicker.swift */; };
+		2EEE494722F61FDE00249BCE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE494622F61FDE00249BCE /* ImageViewController.swift */; };
 		30F77748221F73EC002A9FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F77747221F73EB002A9FAA /* AppDelegate.swift */; };
 		30F7774A221F73EC002A9FAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F77749221F73EC002A9FAA /* MainViewController.swift */; };
 		30F7774D221F73EC002A9FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F7774B221F73EC002A9FAA /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		2EEE494422F5096500249BCE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2EEE494622F61FDE00249BCE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		30F77744221F73EB002A9FAA /* ImagePicker-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImagePicker-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F77747221F73EB002A9FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F77749221F73EC002A9FAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				30F77747221F73EB002A9FAA /* AppDelegate.swift */,
 				30F77749221F73EC002A9FAA /* MainViewController.swift */,
 				30F7774B221F73EC002A9FAA /* Main.storyboard */,
+				2EEE494622F61FDE00249BCE /* ImageViewController.swift */,
 				30F7774E221F73ED002A9FAA /* Assets.xcassets */,
 				30F77750221F73ED002A9FAA /* LaunchScreen.storyboard */,
 				30F77753221F73ED002A9FAA /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				2EEE494522F5096500249BCE /* ImagePicker.swift in Sources */,
 				30F7774A221F73EC002A9FAA /* MainViewController.swift in Sources */,
+				2EEE494722F61FDE00249BCE /* ImageViewController.swift in Sources */,
 				30F77748221F73EC002A9FAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
