@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E8BE9E522FCF92500F2A9C5 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE9E422FCF92500F2A9C5 /* ImagePickerViewController.swift */; };
 		6BDA0FCE22289A3D0035D08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA0FCD22289A3D0035D08B /* AppDelegate.swift */; };
 		6BDA0FD322289A3D0035D08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA0FD122289A3D0035D08B /* Main.storyboard */; };
 		6BDA0FD522289A3E0035D08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BDA0FD422289A3E0035D08B /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E8BE9E422FCF92500F2A9C5 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerViewController.swift; path = Snapchat/ImagePickerViewController.swift; sourceTree = SOURCE_ROOT; };
 		6BDA0FCA22289A3D0035D08B /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDA0FCD22289A3D0035D08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BDA0FD222289A3D0035D08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		6BDA0FE322289ABA0035D08B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2E8BE9E422FCF92500F2A9C5 /* ImagePickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8BE9E522FCF92500F2A9C5 /* ImagePickerViewController.swift in Sources */,
 				6BDA0FE022289A740035D08B /* Data.swift in Sources */,
 				6BDA0FCE22289A3D0035D08B /* AppDelegate.swift in Sources */,
 			);
@@ -308,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Snapchat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosdecal.Snapchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Snapchat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosdecal.Snapchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

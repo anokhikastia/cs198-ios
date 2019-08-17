@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E8BE9E322FBB01B00F2A9C5 /* phrases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BE9E222FBB01B00F2A9C5 /* phrases.plist */; };
 		2EEE494922FA7BFC00249BCE /* HangmanPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE494822FA7BFC00249BCE /* HangmanPhrases.swift */; };
 		6BA6366A221C8F9E0000FB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA63669221C8F9E0000FB86 /* AppDelegate.swift */; };
 		6BA6366C221C8F9E0000FB86 /* HangmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6366B221C8F9E0000FB86 /* HangmanViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E8BE9E222FBB01B00F2A9C5 /* phrases.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = phrases.plist; path = Hangman/phrases.plist; sourceTree = SOURCE_ROOT; };
 		2EEE494822FA7BFC00249BCE /* HangmanPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HangmanPhrases.swift; path = Hangman/HangmanPhrases.swift; sourceTree = SOURCE_ROOT; };
 		6BA63666221C8F9E0000FB86 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA63669221C8F9E0000FB86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		6BA6367B221C90F00000FB86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E8BE9E222FBB01B00F2A9C5 /* phrases.plist */,
 				2EEE494822FA7BFC00249BCE /* HangmanPhrases.swift */,
 			);
 			path = Model;
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA63674221C8FA00000FB86 /* LaunchScreen.storyboard in Resources */,
+				2E8BE9E322FBB01B00F2A9C5 /* phrases.plist in Resources */,
 				6BA63671221C8FA00000FB86 /* Assets.xcassets in Resources */,
 				6BA6366F221C8F9E0000FB86 /* Main.storyboard in Resources */,
 			);
