@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +29,7 @@
         <!--Image Picker View Controller-->
         <scene sceneID="VTv-SH-i9t">
             <objects>
-                <viewController title="Image Picker View Controller" id="Eeg-RV-di2" sceneMemberID="viewController">
+                <viewController title="Image Picker View Controller" id="Eeg-RV-di2" customClass="ImagePickerViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGB-iR-yd2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,29 +39,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t5K-4e-5ob">
-                                    <size key="itemSize" width="161" height="101"/>
+                                    <size key="itemSize" width="271" height="270"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="2cD-XZ-Y8j">
-                                        <rect key="frame" x="0.0" y="0.0" width="161" height="101"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pictureCell" id="2cD-XZ-Y8j" customClass="ImageCollectionViewCell" customModule="Snapchat" customModuleProvider="target">
+                                        <rect key="frame" x="36" y="0.0" width="271" height="270"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="161" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="271" height="270"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-dN-lxI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="161" height="101"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-dN-lxI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.027823337035230277" blue="0.0579663212435233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="160" id="UUg-1j-cwB"/>
-                                                        <constraint firstAttribute="width" secondItem="ULe-dN-lxI" secondAttribute="height" multiplier="1:1" id="afC-k6-rc4"/>
-                                                        <constraint firstAttribute="width" constant="160" id="qQW-67-heP"/>
+                                                        <constraint firstAttribute="height" constant="250" id="HGX-uA-jRP"/>
+                                                        <constraint firstAttribute="width" constant="250" id="xhx-dy-iz2"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ULe-dN-lxI" secondAttribute="trailing" id="FNW-Hk-skW"/>
+                                            <constraint firstAttribute="bottom" secondItem="ULe-dN-lxI" secondAttribute="bottom" id="Jlg-U4-Rj2"/>
+                                            <constraint firstItem="ULe-dN-lxI" firstAttribute="leading" secondItem="2cD-XZ-Y8j" secondAttribute="leading" id="Wcp-l7-PcM"/>
+                                            <constraint firstItem="ULe-dN-lxI" firstAttribute="top" secondItem="2cD-XZ-Y8j" secondAttribute="top" id="Yt6-bY-HCS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgPicked" destination="ULe-dN-lxI" id="VQc-cR-24h"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -70,8 +78,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="doe-h7-SL4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="z81-TO-7Jl"/>
+                    <navigationItem key="navigationItem" title="SnapChat 2.0" id="Yda-Pe-xal"/>
                     <connections>
+                        <outlet property="imgPickerCollectionView" destination="V8h-Rs-gr5" id="KI3-xL-Jnw"/>
                         <segue destination="wIK-d8-P91" kind="show" id="eJm-W8-uFl"/>
                     </connections>
                 </viewController>
@@ -82,7 +91,7 @@
         <!--Feed Picker View Controller-->
         <scene sceneID="WRD-Dh-rY8">
             <objects>
-                <viewController title="Feed Picker View Controller" id="wIK-d8-P91" sceneMemberID="viewController">
+                <viewController title="Feed Picker View Controller" id="wIK-d8-P91" customClass="FeedPickerViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tfE-DL-i1V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,15 +101,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="S8l-MI-PtV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chooseThreadCell" rowHeight="73" id="S8l-MI-PtV" customClass="FeedPickerViewCell" customModule="Snapchat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S8l-MI-PtV" id="DxR-PP-gkp">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S8l-MI-PtV" id="DxR-PP-gkp" customClass="FeedPickerViewCell" customModule="Snapchat" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-6I-TuP">
-                                                    <rect key="frame" x="9" y="6" width="74" height="56"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feed Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-6I-TuP">
+                                                    <rect key="frame" x="9" y="6" width="327" height="56"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -108,6 +117,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedName" destination="ZCJ-6I-TuP" id="COb-3s-PT4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -140,6 +152,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nra-Wi-lmD"/>
                     </view>
+                    <connections>
+                        <outlet property="FeedPickerTableView" destination="e65-ek-L3j" id="CO3-oJ-k1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l83-p0-RV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
