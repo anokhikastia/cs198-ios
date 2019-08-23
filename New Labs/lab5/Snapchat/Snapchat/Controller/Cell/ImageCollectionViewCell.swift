@@ -12,4 +12,5 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imgPicked: UIImageView!
     
+    
 }

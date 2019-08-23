@@ -25,6 +25,11 @@ class ImagePickerViewController: UIViewController, UICollectionViewDataSource, U
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let chosenCell = collectionView.cellForItem(at: indexPath) as! ImageCollectionViewCell
+        chosenImage = chosenCell.imgPicked.image
+        performSegue(withIdentifier: "imageSegue", sender: nil)
+    }
     
     @IBOutlet weak var imgPickerCollectionView: UICollectionView!
     

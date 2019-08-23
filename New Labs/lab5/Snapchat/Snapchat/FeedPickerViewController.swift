@@ -28,10 +28,16 @@ class FeedPickerViewController : UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        feedName.text = data?.feeds[indexPath.row]
+    }
+    
     
     var image: UIImage?
     var data: Data?
     
     @IBOutlet weak var FeedPickerTableView: UITableView!
+
+    @IBOutlet weak var feedName: UILabel!
     
 }
