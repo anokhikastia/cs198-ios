@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E01BE83232757EF00EB578C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BE82232757EF00EB578C /* AppDelegate.swift */; };
+		2E01BE85232757EF00EB578C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BE84232757EF00EB578C /* ViewController.swift */; };
+		2E01BE88232757EF00EB578C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E01BE86232757EF00EB578C /* Main.storyboard */; };
+		2E01BE8B232757EF00EB578C /* LearnJapanese.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BE89232757EF00EB578C /* LearnJapanese.xcdatamodeld */; };
+		2E01BE8D232757F000EB578C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E01BE8C232757F000EB578C /* Assets.xcassets */; };
+		2E01BE90232757F000EB578C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E01BE8E232757F000EB578C /* LaunchScreen.storyboard */; };
+		2E01BE9B232757F000EB578C /* LearnJapaneseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BE9A232757F000EB578C /* LearnJapaneseTests.swift */; };
+		2E01BEA6232757F000EB578C /* LearnJapaneseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BEA5232757F000EB578C /* LearnJapaneseUITests.swift */; };
+		2E01BEBD232EBA7600EB578C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BEBC232EBA7600EB578C /* LoginViewController.swift */; };
+		2E01BEBF232EBF8F00EB578C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BEBE232EBF8F00EB578C /* Users.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E01BE97232757F000EB578C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E01BE77232757EF00EB578C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E01BE7E232757EF00EB578C;
+			remoteInfo = LearnJapanese;
+		};
+		2E01BEA2232757F000EB578C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E01BE77232757EF00EB578C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E01BE7E232757EF00EB578C;
+			remoteInfo = LearnJapanese;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E01BE7F232757EF00EB578C /* LearnJapanese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnJapanese.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E01BE82232757EF00EB578C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E01BE84232757EF00EB578C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E01BE87232757EF00EB578C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E01BE8A232757EF00EB578C /* LearnJapanese.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearnJapanese.xcdatamodel; sourceTree = "<group>"; };
+		2E01BE8C232757F000EB578C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E01BE8F232757F000EB578C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E01BE91232757F000EB578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E01BE96232757F000EB578C /* LearnJapaneseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnJapaneseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E01BE9A232757F000EB578C /* LearnJapaneseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnJapaneseTests.swift; sourceTree = "<group>"; };
+		2E01BE9C232757F000EB578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E01BEA1232757F000EB578C /* LearnJapaneseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnJapaneseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E01BEA5232757F000EB578C /* LearnJapaneseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnJapaneseUITests.swift; sourceTree = "<group>"; };
+		2E01BEA7232757F000EB578C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E01BEBC232EBA7600EB578C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2E01BEBE232EBF8F00EB578C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E01BE7C232757EF00EB578C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E01BE93232757F000EB578C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E01BE9E232757F000EB578C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E01BE76232757EF00EB578C = {
+			isa = PBXGroup;
+			children = (
+				2E01BE81232757EF00EB578C /* LearnJapanese */,
+				2E01BE99232757F000EB578C /* LearnJapaneseTests */,
+				2E01BEA4232757F000EB578C /* LearnJapaneseUITests */,
+				2E01BE80232757EF00EB578C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E01BE80232757EF00EB578C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E01BE7F232757EF00EB578C /* LearnJapanese.app */,
+				2E01BE96232757F000EB578C /* LearnJapaneseTests.xctest */,
+				2E01BEA1232757F000EB578C /* LearnJapaneseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E01BE81232757EF00EB578C /* LearnJapanese */ = {
+			isa = PBXGroup;
+			children = (
+				2E01BEB7232EB75500EB578C /* Model */,
+				2E01BE82232757EF00EB578C /* AppDelegate.swift */,
+				2E01BE84232757EF00EB578C /* ViewController.swift */,
+				2E01BE86232757EF00EB578C /* Main.storyboard */,
+				2E01BE8C232757F000EB578C /* Assets.xcassets */,
+				2E01BE8E232757F000EB578C /* LaunchScreen.storyboard */,
+				2E01BE91232757F000EB578C /* Info.plist */,
+				2E01BE89232757EF00EB578C /* LearnJapanese.xcdatamodeld */,
+				2E01BEBC232EBA7600EB578C /* LoginViewController.swift */,
+			);
+			path = LearnJapanese;
+			sourceTree = "<group>";
+		};
+		2E01BE99232757F000EB578C /* LearnJapaneseTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E01BE9A232757F000EB578C /* LearnJapaneseTests.swift */,
+				2E01BE9C232757F000EB578C /* Info.plist */,
+			);
+			path = LearnJapaneseTests;
+			sourceTree = "<group>";
+		};
+		2E01BEA4232757F000EB578C /* LearnJapaneseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E01BEA5232757F000EB578C /* LearnJapaneseUITests.swift */,
+				2E01BEA7232757F000EB578C /* Info.plist */,
+			);
+			path = LearnJapaneseUITests;
+			sourceTree = "<group>";
+		};
+		2E01BEB7232EB75500EB578C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E01BEBE232EBF8F00EB578C /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E01BE7E232757EF00EB578C /* LearnJapanese */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E01BEAA232757F000EB578C /* Build configuration list for PBXNativeTarget "LearnJapanese" */;
+			buildPhases = (
+				2E01BE7B232757EF00EB578C /* Sources */,
+				2E01BE7C232757EF00EB578C /* Frameworks */,
+				2E01BE7D232757EF00EB578C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnJapanese;
+			productName = LearnJapanese;
+			productReference = 2E01BE7F232757EF00EB578C /* LearnJapanese.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E01BE95232757F000EB578C /* LearnJapaneseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E01BEAD232757F000EB578C /* Build configuration list for PBXNativeTarget "LearnJapaneseTests" */;
+			buildPhases = (
+				2E01BE92232757F000EB578C /* Sources */,
+				2E01BE93232757F000EB578C /* Frameworks */,
+				2E01BE94232757F000EB578C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E01BE98232757F000EB578C /* PBXTargetDependency */,
+			);
+			name = LearnJapaneseTests;
+			productName = LearnJapaneseTests;
+			productReference = 2E01BE96232757F000EB578C /* LearnJapaneseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E01BEA0232757F000EB578C /* LearnJapaneseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E01BEB0232757F000EB578C /* Build configuration list for PBXNativeTarget "LearnJapaneseUITests" */;
+			buildPhases = (
+				2E01BE9D232757F000EB578C /* Sources */,
+				2E01BE9E232757F000EB578C /* Frameworks */,
+				2E01BE9F232757F000EB578C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E01BEA3232757F000EB578C /* PBXTargetDependency */,
+			);
+			name = LearnJapaneseUITests;
+			productName = LearnJapaneseUITests;
+			productReference = 2E01BEA1232757F000EB578C /* LearnJapaneseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E01BE77232757EF00EB578C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Anokhi Kastia";
+				TargetAttributes = {
+					2E01BE7E232757EF00EB578C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					2E01BE95232757F000EB578C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2E01BE7E232757EF00EB578C;
+					};
+					2E01BEA0232757F000EB578C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2E01BE7E232757EF00EB578C;
+					};
+				};
+			};
+			buildConfigurationList = 2E01BE7A232757EF00EB578C /* Build configuration list for PBXProject "LearnJapanese" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E01BE76232757EF00EB578C;
+			productRefGroup = 2E01BE80232757EF00EB578C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E01BE7E232757EF00EB578C /* LearnJapanese */,
+				2E01BE95232757F000EB578C /* LearnJapaneseTests */,
+				2E01BEA0232757F000EB578C /* LearnJapaneseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E01BE7D232757EF00EB578C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E01BE90232757F000EB578C /* LaunchScreen.storyboard in Resources */,
+				2E01BE8D232757F000EB578C /* Assets.xcassets in Resources */,
+				2E01BE88232757EF00EB578C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E01BE94232757F000EB578C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E01BE9F232757F000EB578C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E01BE7B232757EF00EB578C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E01BEBD232EBA7600EB578C /* LoginViewController.swift in Sources */,
+				2E01BE85232757EF00EB578C /* ViewController.swift in Sources */,
+				2E01BEBF232EBF8F00EB578C /* Users.swift in Sources */,
+				2E01BE83232757EF00EB578C /* AppDelegate.swift in Sources */,
+				2E01BE8B232757EF00EB578C /* LearnJapanese.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E01BE92232757F000EB578C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E01BE9B232757F000EB578C /* LearnJapaneseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E01BE9D232757F000EB578C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E01BEA6232757F000EB578C /* LearnJapaneseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E01BE98232757F000EB578C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E01BE7E232757EF00EB578C /* LearnJapanese */;
+			targetProxy = 2E01BE97232757F000EB578C /* PBXContainerItemProxy */;
+		};
+		2E01BEA3232757F000EB578C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E01BE7E232757EF00EB578C /* LearnJapanese */;
+			targetProxy = 2E01BEA2232757F000EB578C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E01BE86232757EF00EB578C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E01BE87232757EF00EB578C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E01BE8E232757F000EB578C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E01BE8F232757F000EB578C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E01BEA8232757F000EB578C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E01BEA9232757F000EB578C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E01BEAB232757F000EB578C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUJ6F3Y8PH;
+				INFOPLIST_FILE = LearnJapanese/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.LearnJapanese;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2E01BEAC232757F000EB578C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUJ6F3Y8PH;
+				INFOPLIST_FILE = LearnJapanese/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.LearnJapanese;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2E01BEAE232757F000EB578C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUJ6F3Y8PH;
+				INFOPLIST_FILE = LearnJapaneseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.LearnJapaneseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnJapanese.app/LearnJapanese";
+			};
+			name = Debug;
+		};
+		2E01BEAF232757F000EB578C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUJ6F3Y8PH;
+				INFOPLIST_FILE = LearnJapaneseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.LearnJapaneseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnJapanese.app/LearnJapanese";
+			};
+			name = Release;
+		};
+		2E01BEB1232757F000EB578C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUJ6F3Y8PH;
+				INFOPLIST_FILE = LearnJapaneseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.LearnJapaneseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnJapanese;
+			};
+			name = Debug;
+		};
+		2E01BEB2232757F000EB578C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUJ6F3Y8PH;
+				INFOPLIST_FILE = LearnJapaneseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.LearnJapaneseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnJapanese;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E01BE7A232757EF00EB578C /* Build configuration list for PBXProject "LearnJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E01BEA8232757F000EB578C /* Debug */,
+				2E01BEA9232757F000EB578C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E01BEAA232757F000EB578C /* Build configuration list for PBXNativeTarget "LearnJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E01BEAB232757F000EB578C /* Debug */,
+				2E01BEAC232757F000EB578C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E01BEAD232757F000EB578C /* Build configuration list for PBXNativeTarget "LearnJapaneseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E01BEAE232757F000EB578C /* Debug */,
+				2E01BEAF232757F000EB578C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E01BEB0232757F000EB578C /* Build configuration list for PBXNativeTarget "LearnJapaneseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E01BEB1232757F000EB578C /* Debug */,
+				2E01BEB2232757F000EB578C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E01BE89232757EF00EB578C /* LearnJapanese.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E01BE8A232757EF00EB578C /* LearnJapanese.xcdatamodel */,
+			);
+			currentVersion = 2E01BE8A232757EF00EB578C /* LearnJapanese.xcdatamodel */;
+			path = LearnJapanese.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E01BE77232757EF00EB578C /* Project object */;
+}
